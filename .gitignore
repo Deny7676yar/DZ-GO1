@@ -1,5 +1,1 @@
-.gradle
-
-# Ignore IDE specific files
-.idea/
-!.idea/icon*.png
+.idea
