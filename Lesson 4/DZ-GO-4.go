@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-// InsertionSort /*Функция сортировки вставками
+// InsertionSort - Функция сортировки вставками
 func InsertionSort(arr []int) {
 	
 	for i := 1; i < len(arr); i++ {
