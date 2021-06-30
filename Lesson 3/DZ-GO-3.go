@@ -6,18 +6,18 @@ import (
 )
 
 //Калькулятор операций с одним операндом и с двумя
-func main () {
+func main() {
 	var a int
 	fmt.Println("Введите число операндов ('1' унарные операции, '2' бинарные операции): ")
 	fmt.Scan(&a)
 
-	if a == 1{
+	if a == 1 {
 		unocalculator()
 
-	}else if a == 2 {
+	} else if a == 2 {
 		bicalculator()
 
-	}else {
+	} else {
 		fmt.Println("Таких операций нет!")
 		main()
 	}
@@ -26,7 +26,7 @@ func main () {
 
 // Функция бинарный калькулятор
 //для операций с двумя числами float64
-func bicalculator()  {
+func bicalculator() {
 
 	var a, b float64
 	var op string
@@ -35,7 +35,6 @@ func bicalculator()  {
 	if _, err_a := fmt.Scanln(&a); err_a != nil {
 		fmt.Println("Проверьте тип данных первого числа")
 	}
-
 
 	fmt.Print("Введите второе число: ")
 	if _, err_b := fmt.Scanln(&b); err_b != nil {
@@ -68,7 +67,7 @@ func bicalculator()  {
 }
 
 //унарный калькулятор для операций с одним числом
-func unocalculator () {
+func unocalculator() {
 	var a float64
 
 	fmt.Print("Введите одно число число: ")
@@ -87,11 +86,10 @@ func unocalculator () {
 	case "sqrt":
 		result = math.Sqrt(a)
 	case "log":
-		result =  math.Log(a)
+		result = math.Log(a)
 	case "cbrt":
-		result =  math.Cbrt(a)
+		result = math.Cbrt(a)
 
 	}
-	fmt.Println(op,".", a, "=", result)
+	fmt.Println(op, ".", a, "=", result)
 }
-

@@ -4,7 +4,7 @@ import "fmt"
 
 // InsertionSort - Функция сортировки вставками
 func InsertionSort(arr []int) {
-	
+
 	for i := 1; i < len(arr); i++ {
 		x := arr[i]
 		j := i
@@ -17,7 +17,7 @@ func InsertionSort(arr []int) {
 	fmt.Println(arr)
 }
 
-func main()  {
-	slice := []int{21,2,33,11,3,45}
+func main() {
+	slice := []int{21, 2, 33, 11, 3, 45}
 	InsertionSort(slice)
 }

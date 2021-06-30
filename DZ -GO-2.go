@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"math"
 )
+
 //1. Напишите программу для вычисления площади прямоугольника.
 //Длины сторон прямоугольника должны вводиться пользователем с клавиатуры.
 func rectangle() {
@@ -22,9 +23,9 @@ func circle() {
 	fmt.Scan(&s)
 	pi := math.Pi
 
-	r := math.Sqrt( s / pi)
-	d := r*2
-	l := 2 * pi *r
+	r := math.Sqrt(s / pi)
+	d := r * 2
+	l := 2 * pi * r
 
 	fmt.Println("Диаметр окружности: ", d, "\nДлинна окружности: ", l)
 }
@@ -38,9 +39,9 @@ func parsingNumber() {
 	fmt.Scan(&digit)
 
 	digit100 := digit / 100
-	digit10 := digit /10 % 10
+	digit10 := digit / 10 % 10
 	digit1 := digit % 10
 
-	fmt.Println("колличество сотен: ", digit100,"\nдесятков: ",digit10, "\nедениц: ", digit1)
+	fmt.Println("колличество сотен: ", digit100, "\nдесятков: ", digit10, "\nедениц: ", digit1)
 
 }
