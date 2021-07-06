@@ -20,6 +20,21 @@ func fibonachi(n int, mapFib map[int]int) int {
 	return mapFib[n]
 }
 
+
+func fibLine(n int) int {
+	fn := make(map[int]int)
+	for i := 0; i <= n; i++ {
+		var f int
+		if i <= 2 {
+			f = 1
+		} else {
+			f = fn[i-1] + fn[i-2]
+		}
+		fn[i] = f
+	}
+	return fn[n]
+}
+
 func main() {
 	var mapFib = map[int]int{0: 0, 1: 1, 2: 1}
 	var n int
@@ -28,5 +43,7 @@ func main() {
 	fib := fibonachi(n, mapFib)
 
 	fmt.Println(fib)
+
+	fmt.Println(fibLine(n))
 
 }
