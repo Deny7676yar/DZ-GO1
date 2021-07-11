@@ -1,0 +1,1 @@
+module "github.com/Deny7676yar/fibonacci"
